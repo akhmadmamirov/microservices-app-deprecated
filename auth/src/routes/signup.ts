@@ -3,7 +3,7 @@ import { body, validationResult } from 'express-validator'
 
 const router = express.Router()
 
-router.post('api/users/signup', 
+router.post('/api/users/signup', 
 [
   body('email')
     .isEmail()
